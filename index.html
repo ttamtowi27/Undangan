@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Tomi & Yuni</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/audio/maki_memories_preview.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="hero">
+    <img src="assets/images/bunga-atas.png" class="decor-top" alt="Dekorasi Atas" />
+    <div class="title">
+      <h1>TY</h1>
+      <h2>Tomi & Yuni</h2>
+      <p>Save The Date</p>
+      <p>06.09.2025</p>
+    </div>
+    <div class="invitation-to">
+      <p>Kepada Yth.</p>
+      <p>Bapak/Ibu/Saudara/i</p>
+      <h3 id="guest-name">Nama Tamu</h3>
+    </div>
+    <button onclick="openInvitation()">📩 Buka Undangan</button>
+    <img src="assets/images/bunga-bawah.png" class="decor-bottom" alt="Dekorasi Bawah" />
+  </div>
+
+  <div id="invitation" class="hidden">
+    <nav>
+      <ul>
+        <li><a href="#opening">Opening</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#mempelai">Mempelai</a></li>
+        <li><a href="#akad">Akad</a></li>
+        <li><a href="#resepsi">Resepsi</a></li>
+      </ul>
+    </nav>
+
+    <section id="opening">
+      <h2>Tomi & Yuni</h2>
+      <p>06 September 2025</p>
+    </section>
+
+    <section id="quotes">
+      <blockquote>
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+        <br />
+        <cite>Q.S. Ar-Rum Ayat 21</cite>
+      </blockquote>
+    </section>
+
+    <section id="mempelai">
+      <h3>Mempelai Pria</h3>
+      <p>Tomi</p>
+      <p>Putra dari Tito Mulyanto & Sudarmi</p>
+
+      <h3>Mempelai Wanita</h3>
+      <p>Yuni</p>
+      <p>Putri dari Sunarto</p>
+    </section>
+
+    <section id="akad">
+      <h3>Akad Nikah</h3>
+      <p>Sabtu, 6 September 2025</p>
+      <p>Pukul 08.00 WIB</p>
+      <p>Desa Senon RT 07 / RW 03, Kemangkon, Purbalingga, Jawa Tengah</p>
+    </section>
+
+    <section id="resepsi">
+      <h3>Resepsi</h3>
+      <p>Sabtu, 6 September 2025</p>
+      <p>Pukul 11.00 WIB - selesai</p>
+      <p>Desa Senon RT 07 / RW 03, Kemangkon, Purbalingga, Jawa Tengah</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
