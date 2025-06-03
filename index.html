@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Tomi & Yuni</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="envelope">
+    <button onclick="openInvitation()">📩 Buka Undangan</button>
+  </div>
+
+  <div id="invitation" class="hidden">
+    <audio autoplay loop id="bg-music">
+      <source src="maki_memories_preview.mp3" type="audio/mpeg" />
+    </audio>
+    <section class="hero">
+      <h1>Undangan Pernikahan</h1>
+      <h2>Tomi & Yuni</h2>
+      <p id="guest-name">Kepada Yth.</p>
+    </section>
+    <section class="details">
+      <h3>Akad Nikah</h3>
+      <p>Sabtu, 6 September 2025<br>08.00 WIB</p>
+      <h3>Resepsi</h3>
+      <p>11.00 WIB - selesai</p>
+      <h3>Lokasi</h3>
+      <p>Desa Senon RT 07 / RW 03, Kemangkon, Purbalingga, Jawa Tengah</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
