@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Tomi & Yuni</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preload" as="audio" href="assets/maki-memories.mp3">
+</head>
+<body>
+  <div class="envelope" id="envelope">
+    <button onclick="openInvitation()">Buka Undangan</button>
+  </div>
+  <div id="invitation" class="hidden">
+    <audio id="bg-music" autoplay loop>
+      <source src="assets/maki-memories.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="guest-name" class="guest-name"></div>
+    <div class="countdown" id="countdown"></div>
+    <div class="pages">
+      <img src="assets/1.Cover.png" class="page-img" alt="Cover" />
+      <img src="assets/2.Quotes.png" class="page-img" alt="Quotes" />
+      <img src="assets/3.Info Pengantin.png" class="page-img" alt="Info Pengantin" />
+      <img src="assets/4.Akad.png" class="page-img" alt="Akad" />
+      <img src="assets/5.Resepsi.png" class="page-img" alt="Resepsi" />
+      <img src="assets/6.Tanda Kasih Pembuka.png" class="page-img" alt="Tanda Kasih Pembuka" />
+      <img src="assets/7.Kado.png" class="page-img" alt="Kado" />
+      <img src="assets/8.No Rekening.png" class="page-img" alt="No Rekening" />
+      <img src="assets/9.Penutup.png" class="page-img" alt="Penutup" />
+    </div>
+    <div class="actions">
+      <a id="wa-share" href="#" target="_blank">Bagikan via WhatsApp</a>
+      <a href="https://maps.app.goo.gl/MbmzkC6HR9HbTuVL8" target="_blank">Lihat Lokasi</a>
+    </div>
+  </div>
+</body>
+</html>

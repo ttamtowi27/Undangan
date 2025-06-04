@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f8f5f0;
+  text-align: center;
+}
+.envelope {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4bfa3;
+}
+.envelope button {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+.guest-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.countdown {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.actions a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #7c9b7d;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
