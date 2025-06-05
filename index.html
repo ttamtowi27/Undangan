@@ -1,85 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Tomi & Yuni</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Pernikahan</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
       font-family: sans-serif;
-      background: #fff;
-      overflow-x: hidden;
     }
-    .section {
-      width: 100vw;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .button-container {
-      position: absolute;
-      bottom: 80px;
+
+    img {
       width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .section {
+      scroll-margin-top: 60px;
+    }
+
+    .button-container {
       display: flex;
       justify-content: center;
       gap: 20px;
+      margin-top: -80px;
+      margin-bottom: 40px;
     }
-    .btn {
-      background: #4CAF50;
-      color: white;
+
+    .button-link {
       padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
       font-size: 16px;
-      cursor: pointer;
+    }
+
+    .button-link:hover {
+      background-color: #388E3C;
     }
   </style>
 </head>
 <body>
 
-  <!-- 1. cover -->
-  <section class="section" style="background-image: url('assets/1.cover.png');"></section>
+  <!-- Cover -->
+  <img src="Assets/1.Cover.png" alt="Cover" class="section" id="cover" />
 
-  <!-- 2. quotes -->
-  <section class="section" style="background-image: url('assets/2.quotes.png');"></section>
+  <!-- Quotes -->
+  <img src="Assets/2.Quotes.png" alt="Quotes" class="section" id="quotes" />
 
-  <!-- 3. info-pengantin -->
-  <section class="section" style="background-image: url('assets/3.info-pengantin.png');"></section>
+  <!-- Info Pengantin -->
+  <img src="Assets/3.Info Pengantin.png" alt="Info Pengantin" class="section" id="info" />
 
-  <!-- 4. akad -->
-  <section class="section" style="background-image: url('assets/4.akad.png');"></section>
+  <!-- Akad -->
+  <img src="Assets/4.Akad.png" alt="Akad" class="section" id="akad" />
 
-  <!-- 5. resepsi -->
-  <section class="section" style="background-image: url('assets/5.resepsi.png');"></section>
+  <!-- Resepsi -->
+  <img src="Assets/5.Resepsi.png" alt="Resepsi" class="section" id="resepsi" />
 
-  <!-- 6. Tanda Kasih Pembuka -->
-  <section class="section" id="tanda-kasih" style="background-image: url('assets/6.tanda-kasih-pembuka.png'); position: relative;">
-    <div class="button-container">
-      <button class="btn" onclick="scrollToSection('no-rekening')">Cashless</button>
-      <button class="btn" onclick="scrollToSection('kado')">Kirim Kado</button>
-    </div>
-  </section>
+  <!-- Tanda Kasih Pembuka -->
+  <img src="Assets/6.Tanda Kasih Pembuka.png" alt="Tanda Kasih Pembuka" class="section" id="kasih" />
 
-  <!-- 7. kado -->
-  <section class="section" id="kado" style="background-image: url('assets/7.kado.png');"></section>
+  <!-- Tombol Aksi -->
+  <div class="button-container">
+    <a href="#rekening" class="button-link">Cashless</a>
+    <a href="#kado" class="button-link">Kirim Kado</a>
+  </div>
 
-  <!-- 8. no-rekening -->
-  <section class="section" id="no-rekening" style="background-image: url('assets/8.no-rekening.png');"></section>
+  <!-- Kado -->
+  <img src="Assets/7.Kado.png" alt="Kado" class="section" id="kado" />
 
-  <!-- 9. penutup -->
-  <section class="section" style="background-image: url('assets/9.penutup.png');"></section>
+  <!-- No Rekening -->
+  <img src="Assets/8.No Rekening.png" alt="No Rekening" class="section" id="rekening" />
 
-  <script>
-    function scrollToSection(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  </script>
+  <!-- Penutup -->
+  <img src="Assets/9.Penutup.png" alt="Penutup" class="section" id="penutup" />
 
 </body>
 </html>
